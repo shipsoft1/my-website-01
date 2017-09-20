@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Aladin|Allan|Architects+Daughter|Asset');
+
+h1 {
+    font-family: Architects Daughter;
+    font-size: 26px;
+}
+
+h2 {
+    font-family: Aladin;
+    font-size: 14px;
+}
+
+h3 {
+    font-family: Asset;
+    font-size: 14px;
+}
+
+h4 {
+    font-family: Allan;
+    font-size: 20px;
+}
