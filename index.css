@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Aladin|Allan|Architects+Daughter|Asset');
 
+body {
+    min-width: 320px;
+    max-width: 1200px;
+    text-align: center;
+    word-break: keep-all;
+}
+img {
+    width: 100%;
+}
+
 h1 {
     font-family: Architects Daughter;
     font-size: 26px;
@@ -18,4 +28,43 @@ h3 {
 h4 {
     font-family: Allan;
     font-size: 20px;
+}
+[name=name] {
+    width: 95%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+[name=email] {
+    width: 95%;
+    border: 1px solid black;
+    margin-bottom: 15px;
+}
+textarea {
+    width: 95%;
+    border: 1px solid black;
+}
+#more-information {
+    background-color: black;
+    padding-top: 1px;
+}
+#more-information p {
+        color: white;
+    }
+a {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 353px) {
+    h2, p {
+        font-size: 10px;
+        word-wrap: break-word;
+    }
+    h3 {
+        font-size: 12px;
+        word-wrap: break-word;
+    }
+}
+
+@media (min-width: 768px) {
+    
 }
