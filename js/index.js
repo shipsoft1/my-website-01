@@ -9,10 +9,11 @@ $(function() {
         $.ajax({
             url: "https://formspree.io/danyluk65@gmail.com",
             method: "POST",
-            data: { 
+            data: {
                 clientName: $('#client-name').val(),
                 clientEmail: $('#client-email').val(),
-                clientQuestion: $('#client-comment').val()},
+                clientQuestion: $('#client-comment').val()
+            },
             dataType: "json"
         }).done(function() {
             form.reset();
@@ -28,17 +29,20 @@ function myFunction() {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
-    } else {
+    }
+    else {
         x.className = "topnav";
     }
 }
 
 $(function() {
-    $('a[href^="#"]').on('click', function (event) {
-        event.preventDefault();
-
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top - 50
-        }, 500);
+    $('.smooth').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+            event.preventDefault();
+            $('html, body').stop().animate({
+                scrollTop: target.offset().top
+            }, 500);
+        }
     });
 });
