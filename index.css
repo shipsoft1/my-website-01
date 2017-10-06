@@ -40,6 +40,10 @@ h4, nav {
     font-size: 20px;
 }
 
+h2, p {
+    margin: 0px 5px 0px 5px;
+}
+
 [name=name], [name=email] {
     width: 95%;
     border: 1px solid black;
@@ -67,6 +71,12 @@ textarea {
     color: white;
 }
 
+[type=submit] {
+    background-color: black;
+    color: white;
+    width: 100px;
+}
+
 @media (min-width: 768px) {
     [alt$="02"] {
         display: initial;
@@ -81,6 +91,9 @@ textarea {
     h1 {
         font-size: 34px;
     }
+    h2, p {
+    margin: 5px 10px 10px 10px;
+    }
     h2,
     p,
     #more-information {
@@ -88,6 +101,13 @@ textarea {
     }
     h3 {
         font-size: 24px;
+    }
+    [name=name], [name=email] {
+        width: 40%;
+        text-align: left;
+    }
+    textarea {
+    width: 50%;
     }
 }
 
